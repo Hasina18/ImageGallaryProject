@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Lightbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+        <img src="https://img.freepik.com/premium-photo/flower-front-sunset-with-sun-it_1208742-1942.jpg" alt="Image 1" onclick="openLightbox(0)">
+        <img src="https://img.freepik.com/free-photo/white-flower-petals-with-water-drops-pollen_181624-27665.jpg" alt="Image 2" onclick="openLightbox(1)">
+        <img src="https://wallpapersok.com/images/thumbnail/bringing-beauty-and-whimsy-a-cute-aesthetic-flower-999ow4zggtqtsp4k.webp" alt="Image 3" onclick="openLightbox(2)">
+        <img src="https://img.freepik.com/premium-photo/african-daisy-flower-with-defocused-green-background_554053-354.jpg" alt="Image 4" onclick="openLightbox(3)">
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-img" src="">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
